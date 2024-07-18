@@ -22,9 +22,9 @@ This project is a simple quiz application built using React Hooks. It includes t
 
 - 
 - ## **Contact**:
-  Name -- Ansh Upadhyay
-  Contact number -- 7818949809
-  Email -- upadhyayaansh094@gmail.com
+ - Name - Ansh Upadhyay
+ - Contact_Number - 7818949809
+ - Email - upadhyayaansh094@gmail.com
   
 - ## **Repository**: https://github.com/ansh8955/QuizApp.git
 
