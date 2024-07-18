@@ -91,3 +91,13 @@
 .result button:hover {
   background-color: #222;
 }
+@media (max-width: 600px) {
+  .options button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
+  .result p {
+    font-size: 1em;
+  }
+}
