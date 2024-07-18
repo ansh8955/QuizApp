@@ -78,6 +78,7 @@ const App = () => {
     setFinished(false);
     setWrongAnswers([]);
     setShowCorrectAnswer(false);
+    setAnswerSelected(false);
   };
 
   // Function to shuffle array (Fisher-Yates shuffle algorithm)
@@ -122,7 +123,7 @@ const App = () => {
           setAnswerSelected(false); // Allow next answer selection
           setShowCorrectAnswer(false); // Hide correct answer for the next question
         }
-      }, 2000); // 2 seconds delay before moving to next question
+      }, 1000); // 1 seconds delay before moving to next question
 
     }, 2000); // 2 seconds delay before showing correct answer
   };
