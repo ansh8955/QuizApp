@@ -3,17 +3,57 @@ import './App.css'; // Import your CSS file
 
 const questionsData = [
   {
-    question: 'What is the capital of France?',
-    options: ['Paris', 'Berlin', 'Madrid', 'Rome'],
-    correctAnswer: 'Paris'
+    question: 'What is the capital of Australia?',
+    options: ['Canberra', 'Sydney', 'Melbourne', 'Brisbane'],
+    correctAnswer: 'Canberra'
   },
   {
-    question: 'Which planet is known as the Red Planet?',
-    options: ['Earth', 'Jupiter', 'Mars', 'Saturn'],
-    correctAnswer: 'Mars'
+    question: 'Who wrote the novel "1984"?',
+    options: ['George Orwell', 'Ernest Hemingway', 'J.K. Rowling', 'F. Scott Fitzgerald'],
+    correctAnswer: 'George Orwell'
   },
-  // Add more questions as needed
+  {
+    question: 'Which river is the longest in the world?',
+    options: ['Nile', 'Amazon', 'Yangtze', 'Mississippi'],
+    correctAnswer: 'Nile'
+  },
+  {
+    question: 'Which gas do plants absorb from the atmosphere?',
+    options: ['Carbon dioxide', 'Oxygen', 'Nitrogen', 'Hydrogen'],
+    correctAnswer: 'Carbon dioxide'
+  },
+  {
+    question: 'What is the largest planet in our solar system?',
+    options: ['Jupiter', 'Saturn', 'Neptune', 'Earth'],
+    correctAnswer: 'Jupiter'
+  },
+  {
+    question: 'Who is the author of "Harry Potter and the Philosopher\'s Stone"?',
+    options: ['J.K. Rowling', 'Stephen King', 'George R.R. Martin', 'Roald Dahl'],
+    correctAnswer: 'J.K. Rowling'
+  },
+  {
+    question: 'What is the smallest bone in the human body?',
+    options: ['Stapes', 'Femur', 'Humerus', 'Tibia'],
+    correctAnswer: 'Stapes'
+  },
+  {
+    question: 'Which city hosted the 2012 Summer Olympics?',
+    options: ['London', 'Tokyo', 'Rio de Janeiro', 'Beijing'],
+    correctAnswer: 'London'
+  },
+  {
+    question: 'What is the chemical symbol for water?',
+    options: ['H2O', 'CO2', 'NaCl', 'O2'],
+    correctAnswer: 'H2O'
+  },
+  {
+    question: 'Who painted the famous "Starry Night"?',
+    options: ['Vincent van Gogh', 'Pablo Picasso', 'Leonardo da Vinci', 'Claude Monet'],
+    correctAnswer: 'Vincent van Gogh'
+  }
 ];
+
 
 const App = () => {
   const [questions, setQuestions] = useState([]);
