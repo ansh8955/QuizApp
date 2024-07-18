@@ -1,61 +1,93 @@
-/* styles.css */
+
+
 .app {
-  background-color: #f0f0f0; /* Light grey background for the entire app */
-  padding: 20px;
+  font-family: sans-serif;
+  background-color: #fff;
   border-radius: 8px;
-  width: 400px; /* Adjust width as needed */
-  margin: 0 auto; /* Center align */
+  padding: 16px;
+  margin: 0 auto;
+  width: 500px;
+  max-width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
+.score {
+  font-weight: 750;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+
 .question {
-  background-color: #ffffff; /* White background for each question */
-  padding: 20px;
-  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  padding: 16px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adding shadow effect */
+  margin-bottom: 16px;
+}
+
+.question h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 
 .options {
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .options button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9; /* Light grey background for options */
-  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 4px;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .options button:hover {
-  background-color: #e9e9e9; /* Darker grey on hover */
+  background-color: #eee;
+}
+
+.options button[disabled] {
+  opacity: 0.5;
+  cursor: default;
 }
 
 .correct-answer {
-  margin-top: 10px;
-  font-weight: bold;
+  margin-top: 8px;
+  color: green;
 }
 
 .result {
-  background-color: #ffffff; /* White background for result */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adding shadow effect */
+  text-align: center;
+}
+
+.result h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.result p {
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 
 .result button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #4CAF50; /* Green button */
-  color: white;
+  background-color: #333;
+  color: #fff;
   border: none;
   border-radius: 4px;
+  padding: 12px 16px;
+  font-size: 16px;
   cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .result button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #222;
 }
