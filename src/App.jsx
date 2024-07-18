@@ -155,7 +155,7 @@ const App = () => {
             </div>
             {answerSelected && showCorrectAnswer && (
               <div className="correct-answer">
-                Correct Answer: <span style={{ color: 'green' }}>{questions[currentQuestionIndex].correctAnswer}</span>
+                Correct Answer: <span style={{ color: 'white' }}>{questions[currentQuestionIndex].correctAnswer}</span>
               </div>
             )}
           </div>
