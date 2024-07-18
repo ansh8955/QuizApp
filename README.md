@@ -17,10 +17,8 @@ This project is a simple quiz application built using React Hooks. It includes t
 - CSS3 (or styled-components)
 
 
-
 - ## **Live Demo**: (https://quiz-app-new-seven.vercel.app/)
 
-- 
 - ## **Contact**:
  - Name - Ansh Upadhyay
  - Contact_Number - 7818949809
@@ -28,5 +26,5 @@ This project is a simple quiz application built using React Hooks. It includes t
   
 - ## **Repository**: https://github.com/ansh8955/QuizApp.git
 
-- # **License**: Mentioned that the project is licensed under the MIT License.
+- ### **License**: Mentioned that the project is licensed under the MIT License.
 
