@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css'; // Import your CSS file
+import './App.css'; 
 
 const questionsData = [
   {
@@ -63,14 +63,11 @@ const App = () => {
   const [answerSelected, setAnswerSelected] = useState(false);
   const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
 
-  // Initialize questions on component mount
   useEffect(() => {
     resetQuiz();
   }, []);
 
-  // Function to reset the quiz
   const resetQuiz = () => {
-    // Shuffle questions array for a new quiz order
     const shuffledQuestions = shuffleArray(questionsData);
     setQuestions(shuffledQuestions);
     setCurrentQuestionIndex(0);
@@ -81,7 +78,6 @@ const App = () => {
     setAnswerSelected(false);
   };
 
-  // Function to shuffle array (Fisher-Yates shuffle algorithm)
   const shuffleArray = (array) => {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -92,16 +88,15 @@ const App = () => {
   };
 
   const handleAnswerClick = (selectedOption) => {
-    if (answerSelected) return; // Prevent multiple clicks during the pause
+    if (answerSelected) return; 
 
     setAnswerSelected(true);
 
     setTimeout(() => {
       const correctAnswer = questions[currentQuestionIndex].correctAnswer;
       if (selectedOption === correctAnswer) {
-        setScore(prevScore => prevScore + 1); // Increment score if answer is correct
+        setScore(prevScore => prevScore + 1); 
       } else {
-        // Store wrong answer with correct answer for result display
         setWrongAnswers(prevWrongAnswers => [
           ...prevWrongAnswers,
           {
@@ -111,24 +106,21 @@ const App = () => {
         ]);
       }
 
-      // Show correct answer after 2 seconds
       setShowCorrectAnswer(true);
 
       setTimeout(() => {
-        // Move to next question or finish the quiz
         if (currentQuestionIndex === questions.length - 1) {
-          setFinished(true); // All questions answered
+          setFinished(true);
         } else {
           setCurrentQuestionIndex(currentQuestionIndex + 1);
-          setAnswerSelected(false); // Allow next answer selection
-          setShowCorrectAnswer(false); // Hide correct answer for the next question
+          setAnswerSelected(false); 
+          setShowCorrectAnswer(false); 
         }
-      }, 1000); // 1 seconds delay before moving to next question
+      }, 1000); 
 
-    }, 2000); // 2 seconds delay before showing correct answer
+    }, 2000); 
   };
 
-  // Calculate current question number
   const currentQuestionNumber = currentQuestionIndex + 1;
 
   return (
